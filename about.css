@@ -26,8 +26,9 @@ body {
         display: none;
     }
     .navbar a.icon {
-        float: left;
+        float: right;
         display: block;
+        padding:20px;
     }
 }
 
