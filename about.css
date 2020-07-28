@@ -2,6 +2,51 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+#navbar {
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, black, red);
+    margin-bottom: 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.navbar .icon {
+    display: none;
+    background-color: white;
+    width: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: left;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        height: 100%;
+    }
+}
 
 html {
     box-sizing: border-box;
