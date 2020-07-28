@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="about.css">
     <title>معلومات عن الطاقم</title>
 </head>
 
 <body>
-    <div id="bar">
+    <div class="navbar" id="navbar"> <a class="bonjour" href="#" id="id">الإسلام في بلادنا</a>&nbsp;
         <a class="bonjour" href="./bejjar.html" class="active">
             الصفحة الرئيسية
         </a>
@@ -19,9 +20,10 @@
         <a class="bonjour" href="index.html">دروس المتاحة</a>&nbsp;&nbsp;
         <a class="bonjour" href="#">معلومات عن الطاقم</a>
         <a class="bonjour" href="mailto:">لتواصل معنا</a>&nbsp;&nbsp;
-        <a class="bonjour" href="./bejjar.html" id="id">1er bac La confiance</a>&nbsp;
-
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
     </div>
+  
 
     <div class="about-section">
         <h1>About Us Page</h1>
@@ -82,6 +84,15 @@
 
 
     </div>
+    <script> function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            };
+    </script>
 </body>
 
 
