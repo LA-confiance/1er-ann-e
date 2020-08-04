@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: green;
+}
+
+body {
+    background: linear-gradient(45, black, rgb(80, 80, 80));
+}
+img{width:30px;
+    height:40px;
+}
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(50deg, red, white);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#navbar {
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, black, red);
+    margin-bottom: 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    transition:1s;
+}
+
+.navbar .icon {
+    display: none;
+    background-color: white;
+    width: 20px;
+      transition:1s;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float:right;
+        display: block;
+        padding:10px;
+          transition:1s;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+              transition:1s;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+          transition:1s;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        height: 100%;
+          transition:1s;
+    }
+}
+
+.text {
+    background: linear-gradient(50deg, darkorange, red);
+    font-size: 50px;
+    mix-blend-mode: saturation;
+    color: white;
+    transition: linear;
+}
+
+.bonjour {
+    color: beige;
+    text-decoration: beige;
+    padding: 5px;
+    float: right;
+    transition: 1s;
+}
+
+#id {
+    float: left;
+}
+
+.bonjour:hover {
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.bonjour:hover {
+    box-shadow: 18px 8px 20px 0 grey;
+    border-radius: 20px;
+}
+
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin-bottom: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style the counter cards */
+
+.card {
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 1s;
+}
+
+.card:hover {
+    box-shadow: 12px 12px 15px 0 gray;
+}
+
+button {
+    background: linear-gradient(80deg, DodgerBlue, white);
+    border: none;
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+}
+
+button:hover {
+    background: linear-gradient(80deg, black, DodgerBlue);
+    color: white;
+}
