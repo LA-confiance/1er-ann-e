@@ -10,6 +10,8 @@ html {
 body {
     background: linear-gradient(45, black, rgb(80, 80, 80));
 }
+img{width:30px;
+    height:40px;
 
 #btn {
     display: none;
