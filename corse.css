@@ -84,8 +84,8 @@ img{width:100px;
 .text {
     background: linear-gradient(50deg, darkorange, red);
     font-size: 50px;
-    mix-blend-mode: saturation;
-    color: white;
+    mix-blend-mode: screen;
+  
     transition: linear;
 }
 
