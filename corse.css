@@ -4,6 +4,9 @@
 .subnav:hover .subnavbtn {
     background: linear-gradient(40deg, black, white);
 }
+.navbar {
+    overflow: hidden;
+}
 
 .subnav-content {
     display: none;
